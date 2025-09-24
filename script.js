@@ -185,6 +185,8 @@ showCards();
 function updateStack() {
   let cards = document.querySelectorAll(".stack .card");
   for (let index = 0; index < 3; index++) {
+    let card = cards[index];
+    if (!card) continue; // skip if 3 card doesn't exist
     card.style.zIndex = 3 - index;
     card.style.transform = `translateY(${index * 10}px) scale(${
       1 - index * 0.1
