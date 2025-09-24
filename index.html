@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card + Form UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="note-container">
+      <!-- Left Icons -->
+      <div class="left-icons">
+        <button id="add-note"><i class="ri-add-line"></i></button>
+        <button id="upBtn"><i class="ri-arrow-up-line"></i></button>
+        <button id="downBtn"><i class="ri-arrow-down-line"></i></button>
+      </div>
+
+      <!-- Stack of Cards -->
+      <div class="stack">
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/2a/07/97/2a0797046757029d961f00f3bf353229.jpg"
+            alt="User"
+            class="avatar"
+          />
+          <div class="card-info">
+            <h3>Niraj</h3>
+            <div class="info-row">
+              <span class="label">Home town</span>
+              <span class="value">Jharkhand</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Purpose</span>
+              <span class="value">Tech Talk</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="call-btn"><i class="ri-phone-fill"></i> Call</button>
+            <button class="msg-btn">Message</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Colors -->
+      <div class="right-colors">
+        <span class="dot black"></span>
+        <span class="dot purple"></span>
+        <span class="dot orange"></span>
+        <span class="dot teal"></span>
+      </div>
+
+      <!-- Form -->
+      <div class="form-container">
+        <h2>New Call</h2>
+        <form>
+          <label>Image URL</label>
+          <input
+            type="url"
+            placeholder="https://example.com/photo.jpg"
+            required
+          />
+
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+
+          <label>Home Town</label>
+          <input type="text" placeholder="Enter home town" required />
+
+          <label>Purpose</label>
+          <input
+            type="text"
+            placeholder="e.g., Quick appointment note"
+            required
+          />
+
+          <label>Category</label>
+          <div class="radio-group">
+            <label class="tag-checkbox">
+              <input required type="radio" name="category" value="emergency" />
+              <span>Emergency</span>
+            </label>
+
+            <label class="tag-checkbox">
+              <input required type="radio" name="category" value="important" />
+              <span>Important</span>
+            </label>
+
+            <label class="tag-checkbox">
+              <input required type="radio" name="category" value="urgent" />
+              <span>Urgent</span>
+            </label>
+
+            <label class="tag-checkbox">
+              <input required type="radio" name="category" value="no-rush" />
+              <span>No Rush</span>
+            </label>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="submit-btn">Create Note</button>
+          </div>
+        </form>
+        <button class="closeForm">Close</button>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
