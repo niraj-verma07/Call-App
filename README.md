@@ -25,6 +25,3 @@ This project was created after completing **JavaScript Part 2** from Sheryians C
 - Clean code structure and best practices
 
 ## 📸 Demo
-
-<img width="1920" height="908" alt="Screenshot 2025-09-22 at 1 11 10 AM" src="https://github.com/user-attachments/assets/12c64997-8b29-431e-b5f2-50af6f279b78" />
-<img width="1920" height="908" alt="Screenshot 2025-09-22 at 1 11 27 AM" src="https://github.com/user-attachments/assets/e5013076-667c-498e-ac76-0ba86e3f81fc" />
